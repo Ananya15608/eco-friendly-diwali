@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us - Eco Friendly Diwali</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5f3;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 60%;
+            margin: 2em auto;
+            background-color: white;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 0.5em 0;
+        }
+        input, textarea {
+            padding: 0.8em;
+            margin-bottom: 1.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 1em;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+            padding: 1em;
+            background-color: #4caf50;
+            color: white;
+        }
+    </style>
+    <script>
+        function redirectToThankYou(event) {
+            event.preventDefault();
+            window.location.href = "thankyou.html"; // Change to your Thank You page link
+        }
+    </script>
+</head>
+<body>
+
+<header>Get in Touch</header>
+
+<div class="container">
+    <h2>We would love to hear from you!</h2>
+    <form onsubmit="redirectToThankYou(event)">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+    &copy; 2024 Eco Friendly Diwali. All rights reserved.
+</footer>
+
+</body>
+</html>
